@@ -1,0 +1,48 @@
+<acceptance-test-run title="Clear a single Todo item from the list completely by clicking the Close icon" name="Clear a single Todo item from the list completely by clicking the Close icon" description="" steps="3" successful="0" failures="0" skipped="0" ignored="2" pending="1" annotated-result="PENDING" result="PENDING" duration="8" timestamp="2016-09-14T17:23:00.926+10:00" session-id="c99f96ff638c5480a1d00ddda4ffcc8f">
+  <user-story id="write-some-browser-tests-to-validate-the-correct-function-of-a-javascript-single-page-web-application" name="Write some browser tests to validate the correct function of a Javascript Single Page Web Application" path="src/test/resources/features/todo_mvc.feature"/>
+  <issues>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+  </issues>
+  <versions>
+    <version>Release-1</version>
+  </versions>
+  <tags>
+    <tag name="ui" type="component"/>
+    <tag name="Write some browser tests to validate the correct function of a Javascript Single Page Web Application" type="feature"/>
+    <tag name="ETSY-001" type="issue"/>
+    <tag name="runThis" type="tag"/>
+    <tag name="Release-1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>item</header>
+      <header>state</header>
+    </headers>
+    <rows>
+      <row result="PENDING">
+        <value>item0</value>
+        <value>all</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {item=item0, state=all}" result="PENDING">
+    <test-step result="PENDING" duration="4">
+      <description>Given I am on the todomvc page and &apos;all&apos; is selected</description>
+    </test-step>
+    <test-step result="IGNORED" duration="1">
+      <description>When I delete the &apos;item0&apos;</description>
+    </test-step>
+    <test-step result="IGNORED" duration="1">
+      <description>Then the &apos;item0&apos; should not be visible</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

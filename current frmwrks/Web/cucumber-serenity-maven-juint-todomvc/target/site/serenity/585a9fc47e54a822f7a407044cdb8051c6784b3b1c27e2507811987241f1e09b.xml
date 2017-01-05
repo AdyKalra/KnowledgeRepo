@@ -1,0 +1,68 @@
+<acceptance-test-run title="Add items on Todo Page" name="Add items on Todo Page" description="" steps="6" successful="6" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9413" timestamp="2016-09-22T11:50:09.408+10:00" session-id="58036c51ccb156678f0536ad198f4c1d">
+  <user-story id="write-some-browser-tests-to-validate-the-correct-function-of-a-javascript-single-page-web-application" name="Write some browser tests to validate the correct function of a Javascript Single Page Web Application" path="src/test/resources/features/todo_mvc.feature"/>
+  <issues>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+  </issues>
+  <versions>
+    <version>Release-1</version>
+  </versions>
+  <tags>
+    <tag name="ui" type="component"/>
+    <tag name="Write some browser tests to validate the correct function of a Javascript Single Page Web Application" type="feature"/>
+    <tag name="ETSY-001" type="issue"/>
+    <tag name="runThis" type="tag"/>
+    <tag name="Release-1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>item</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>item1</value>
+      </row>
+      <row result="SUCCESS">
+        <value>item2</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {item=item1}" result="SUCCESS">
+    <test-group name="Given I am on the todomvc page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="5922">
+        <description>Opens home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I enter an &apos;item1&apos;" result="SUCCESS">
+      <test-step result="SUCCESS" duration="538">
+        <description>Enters an item: item1</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see the count increased" result="SUCCESS">
+      <test-step result="SUCCESS" duration="96">
+        <description>Should see items for</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="[1] {item=item2}" result="SUCCESS">
+    <test-group name="Given I am on the todomvc page" result="SUCCESS">
+      <test-step result="SUCCESS" duration="551">
+        <description>Opens home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When I enter an &apos;item2&apos;" result="SUCCESS">
+      <test-step result="SUCCESS" duration="331">
+        <description>Enters an item: item2</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then I should see the count increased" result="SUCCESS">
+      <test-step result="SUCCESS" duration="279">
+        <description>Should see items for</description>
+      </test-step>
+    </test-group>
+  </test-group>
+</acceptance-test-run>

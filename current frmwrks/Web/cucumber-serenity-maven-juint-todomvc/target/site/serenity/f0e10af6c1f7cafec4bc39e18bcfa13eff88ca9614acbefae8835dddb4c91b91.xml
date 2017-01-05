@@ -1,0 +1,46 @@
+<acceptance-test-run title="Complete an existing item on Todo Page" name="Complete an existing item on Todo Page" description="" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="13" timestamp="2016-09-13T18:45:09.143+10:00">
+  <user-story id="write-some-browser-tests-to-validate-the-correct-function-of-a-javascript-single-page-web-application" name="Write some browser tests to validate the correct function of a Javascript Single Page Web Application" path="src/test/resources/features/todomvc.feature"/>
+  <issues>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+    <issue>ETSY-001</issue>
+  </issues>
+  <versions>
+    <version>Release-1</version>
+  </versions>
+  <tags>
+    <tag name="ui" type="component"/>
+    <tag name="Write some browser tests to validate the correct function of a Javascript Single Page Web Application" type="feature"/>
+    <tag name="ETSY-001" type="issue"/>
+    <tag name="runThis" type="tag"/>
+    <tag name="wip" type="tag"/>
+    <tag name="Release-1" type="version"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0" name="" description=""/>
+    </datasets>
+    <headers>
+      <header>item</header>
+      <header>state</header>
+    </headers>
+    <rows>
+      <row result="PENDING">
+        <value>item0</value>
+        <value>all</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {item=item0, state=all}" result="SKIPPED">
+    <test-step result="PENDING" duration="1">
+      <description>Given I am on the todomvc page and &apos;all&apos; is selected</description>
+    </test-step>
+    <test-step result="PENDING" duration="1">
+      <description>When I change the status</description>
+    </test-step>
+    <test-step result="PENDING" duration="1">
+      <description>Then I should see &apos;item0&apos; changed to completed</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>
