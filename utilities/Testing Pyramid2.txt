@@ -1,0 +1,122 @@
+<!-- Styles -->
+<style>
+#chartdiv {
+  width: 100%;
+  height: 350px;
+}								
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<!-- Chart code -->
+<script>
+var chart = AmCharts.makeChart("chartdiv", {
+  "type": "serial",
+  "theme": "light",
+  "rotate": true,
+  "marginBottom": 50,
+  "dataProvider": [{
+    "age": "Manual Tests",
+    "male": -0.5,
+    "female": 0.5
+  }, {
+    "age": "GUI Tests",
+    "male": -1.0,
+    "female": 1.0
+  }, {
+    "age": "API Tests",
+    "male": -1.5,
+    "female": 1.5
+  }, {
+    "age": "Integration Tests",
+    "male": -2.0,
+    "female": 2.0
+  }, {
+    "age": "Component Tests",
+    "male": -2.5,
+    "female": 2.5
+  }, {
+    "age": "Unit Tests",
+    "male": -3.0,
+    "female": 3.0
+  }],
+  "startDuration": 1,
+  "graphs": [{
+    "fillAlphas": 0.8,
+    "lineAlpha": 0.2,
+    "type": "column",
+    "valueField": "male",
+    "title": "Male",
+    "clustered": false,
+    "labelFunction": function(item) {
+      return Math.abs(item.values.value);
+    },
+    "balloonFunction": function(item) {
+      return item.category + ": " + Math.abs(item.values.value) + "%";
+    }
+  }, {
+    "fillAlphas": 0.8,
+    "lineAlpha": 0.2,
+    "type": "column",
+    "valueField": "female",
+    "title": "Female",
+    "clustered": false,
+    "labelFunction": function(item) {
+      return Math.abs(item.values.value);
+    },
+    "balloonFunction": function(item) {
+      return item.category + ": " + Math.abs(item.values.value) + "%";
+    }
+  }],
+  "categoryField": "age",
+  "categoryAxis": {
+    "gridPosition": "start",
+    "gridAlpha": 0.2,
+    "axisAlpha": 0
+  },
+  "valueAxes": [{
+    "gridAlpha": 0,
+    "ignoreAxisWidth": true,
+    "labelFunction": function(value) {
+      return Math.abs(value) + '%';
+    },
+    "guides": [{
+      "value": 0,
+      "lineAlpha": 0.2
+    }]
+  }],
+  "balloon": {
+    "fixedPosition": true
+  },
+  "chartCursor": {
+    "valueBalloonsEnabled": true,
+    "cursorAlpha": 0.05,
+    "fullWidth": true
+  },
+  "allLabels": [{
+    "text": "Testing",
+    "x": "28%",
+    "y": "97%",
+    "bold": true,
+    "align": "middle"
+  }, {
+    "text": "Pyramid",
+    "x": "75%",
+    "y": "97%",
+    "bold": true,
+    "align": "middle"
+  }],
+ "export": {
+    "enabled": true
+  }
+
+});
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>
