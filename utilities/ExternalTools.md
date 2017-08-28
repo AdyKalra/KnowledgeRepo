@@ -14,8 +14,8 @@ http://codebeautify.org
 /https://www.draw.io/
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
-#Apps for Data
+# Apps for Data
 https://drive.google.com/drive/my-drive
 
-Radar
+# Radar
 https://ideationplatform.herokuapp.com/login
