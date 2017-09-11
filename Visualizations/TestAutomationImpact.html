@@ -826,7 +826,7 @@ div.storyHeader h1 {
 </div>
 </div>
 <div class="nytg-overlay" id="nytg-departmentOverlay" >
-<p class="nytg-emptyCircleLabel">Empty circles show income.</p>
+<p class="nytg-emptyCircleLabel">Empty circles show tests that are not tagged.</p>
 </div>
 <div class="nytg-overlay" id="nytg-comparisonOverlay" >
 <h5>Comparison Overlay</h5>
@@ -1232,7 +1232,7 @@ nytg.Chart = function(){
           catNode = $j("<div class='nytg-departmentAnnotation nytg-row"+nytg.category_data[i]['row']+"'><p class='department'>"+catLabel+"</p></div>")
           
         } else {
-          catNode = $j("<div class='nytg-departmentAnnotation nytg-row"+nytg.category_data[i]['row']+"'><p class='total'>$"+catTot+"</p><p class='department'>"+catLabel+"</p></div>")
+          catNode = $j("<div class='nytg-departmentAnnotation nytg-row"+nytg.category_data[i]['row']+"'><p class='total'>"+catTot+"</p><p class='department'>"+catLabel+"</p></div>")
           
         }
           catNode.css({'left':this.categoryPositionLookup[cat].x-catWidth/2,'top': this.categoryPositionLookup[cat].y - catYOffset, 'width':catWidth})
