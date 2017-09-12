@@ -1,0 +1,59 @@
+<!-- Styles -->
+<style>
+#chartdiv {
+	width		: 75%;
+	height		: 300px;
+	font-size	: 11px;
+}						
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/funnel.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<!-- Chart code -->
+<script>
+var chart = AmCharts.makeChart( "chartdiv", {
+  "type": "funnel",
+  "theme": "light",
+  "dataProvider": [ {
+    "title": "Unit Tests",
+    "value": 300
+  }, {
+    "title": "Component Tests",
+    "value": 123
+  }, {
+    "title": "Integration Tests",
+    "value": 98
+  }, {
+    "title": "API Tests",
+    "value": 72
+  }, {
+    "title": "GUI Tests",
+    "value": 35
+  }, {
+    "title": "Manual Tests",
+    "value": 35
+  }],
+  "balloon": {
+    "fixedPosition": true
+  },
+  "valueField": "value",
+  "titleField": "title",
+  "marginRight": 240,
+  "marginLeft": 50,
+  "startX": -500,
+  "rotate": true,
+  "labelPosition": "right",
+  "balloonText": "[[title]]: [[value]]n[[description]]",
+  "export": {
+    "enabled": true
+  }
+} );
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>	
