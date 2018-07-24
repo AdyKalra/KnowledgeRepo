@@ -1,0 +1,11 @@
+
+<div id="embedded-feed" style="height:400px;width:600px;"></div>
+<script type="text/javascript" src="https://s0.assets-yammer.com/assets/platform_embed.js"></script>
+<script type="text/javascript">
+yam.connect.embedFeed({
+  container: "#embedded-feed",
+  network: "crownbet.com.au",
+  feedType: "group",
+  feedId: "11999845"
+});
+</script>
