@@ -1,0 +1,22 @@
+<img src="https://conflu.beteasy.be/download/attachments/2916792/timeline.jpg?version=1&modificationDate=1503895325624&api=v2" usemap="#image-map">
+<map name="image-map">
+    <area target="" alt="Test Engineering on a page" title="Test Engineering on a page" href="https://conflu.beteasy.be/pages/viewpage.action?pageId=23758057" coords="264,399,106,434" shape="rect">
+    <area target="" alt="Community of Testing Practice" title="Community of Testing Practice" href="https://www.yammer.com/crownbet.com.au/#/threads/inGroup?type=in_group&amp;feedId=11999845&amp;view=all" coords="349,391,111,351" shape="rect">
+    <area target="" alt="Xray" title="Xray" href="https://jira.beteasy.be/secure/Dashboard.jspa?selectPageId=13515" coords="576,388,463,353" shape="rect">
+    <area target="" alt="30dayschallenge" title="30dayschallenge" href="https://conflu.beteasy.be/display/DEL/Kicking+off+the+%2330dayschallenge" coords="130,308,274,342" shape="rect">
+    <area target="" alt="QC" title="QC" href="https://conflu.beteasy.be/display/DEL/Xray+-+Test+Management+for+JIRA" coords="496,157,384,122" shape="rect">
+    <area target="" alt="COP" title="COP" href="https://conflu.beteasy.be/display/DEL/Testing+Initiatives+RoadMap" coords="1064,77,1193,137" shape="rect">
+    <area target="" alt="SDET SET" title="SDET SET" href="https://conflu.beteasy.be/download/attachments/24544889/timeline4.JPG?version=1&amp;modificationDate=1503533898209&amp;api=v2" coords="165,210,398,250" shape="rect">
+    <area target="" alt="Recruitment" title="Recruitment" href="https://conflu.beteasy.be/display/DEL/Testing+Initiatives+RoadMap" coords="157,262,379,294" shape="rect">
+    <area target="" alt="Radar" title="Radar" href="https://ideationplatform.herokuapp.com/project/2" coords="174,125,310,158" shape="rect">
+    <area target="" alt="KRA KPI" title="KRA KPI" href="https://conflu.beteasy.be/download/attachments/24544889/timeline7.JPG?version=1&amp;modificationDate=1503534371041&amp;api=v2" coords="181,76,278,111" shape="rect">
+    <area target="" alt="RAID" title="RAID" href="https://jira.beteasy.be/secure/Dashboard.jspa?selectPageId=13525" coords="337,166,547,204" shape="rect">
+    <area target="" alt="Architecture" title="Architecture" href="http://172.23.126.107:8080/index.html" coords="597,69,723,110" shape="rect">
+    <area target="" alt="Refactor" title="Refactor" href="http://stash/projects/CA" coords="550,214,718,250" shape="rect">
+    <area target="" alt="Req" title="Req" href="https://jira.beteasy.be/secure/Dashboard.jspa?selectPageId=13516" coords="625,169,885,202" shape="rect">
+    <area target="" alt="MTR" title="MTR" href="https://jira.beteasy.be/secure/Dashboard.jspa?selectPageId=13600" coords="494,309,660,342" shape="rect">
+    <area target="" alt="Tractability" title="Tractability" href="https://jira.beteasy.be/secure/XrayReport!default.jspa?selectedProjectKey=XT" coords="756,69,948,111" shape="rect">
+    <area target="" alt="meetups" title="meetups" href="https://www.meetup.com/topics/software-testing/au/melbourne/" coords="500,125,677,157" shape="rect">
+    <area target="" alt="pyramid" title="pyramid" href="https://conflu.beteasy.be/display/DEL/Testing+Pyramid" coords="703,122,935,159" shape="rect">
+    <area target="" alt="LnL" title="LnL" href="https://conflu.beteasy.be/pages/viewpage.action?pageId=23758057" coords="467,69,593,112" shape="rect">
+</map>

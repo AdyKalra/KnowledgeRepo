@@ -1,0 +1,597 @@
+{
+  "name": "Enterprise Core",
+  "children": [
+    {
+      "name": "Channels",
+      "children": [
+        {
+          "name": "Consumer Website",
+          "children": [
+            {
+              "name": "Website",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Website%22",
+              "dependsOn": [
+                "settlement",
+                "Betting API"
+              ],
+              "technos": [
+                "Varnish",
+                "Betting API",
+                "Events",
+                "Clients",
+                "Account",
+                "Lookup"
+              ],
+              "host": {
+                "Atlas": [],
+                "Absolute": [],
+                "Spark": []
+              },
+              "children": []
+            },
+            {
+              "name": "Lotto Website",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22LottoWebsite%22",
+              "dependsOn": [],
+              "technos": [],
+              "host": {
+                "Phoenix": []
+              }
+            },
+            {
+              "name": "Responsive Website",
+              "url": "live.my-media-website.com",
+              "dependsOn": [],
+              "technos": [],
+              "host": {
+                "Atlas": [],
+                "Spark": []
+              }
+            }
+          ],
+          "dependsOn": [
+            "Xiti",
+            "Google Ads",
+            "Account API"
+          ]
+        },
+        {
+          "name": "Mobile&Tablet",
+          "children": [
+            {
+              "name": "Mobile App",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22MobileApp%22",
+              "children": [],
+              "host": {
+                "Onseo": []
+              }
+            },
+            {
+              "name": "Ambassador App",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Ambassador%22"
+            },
+            {
+              "name": "Lotto App",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Lotto%22",
+              "host": {
+                "Phoenix": [],
+                "Scorpion": []
+              }
+            }
+          ],
+          "dependsOn": [
+            "Content API",
+            "Search API",
+            "Account API"
+          ]
+        },
+        {
+          "name": "Corporate",
+          "children": [
+            {
+              "name": "CrownBet Affiliates",
+              "technos": [],
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Affiliates%22",
+              "host": {
+                "Spark": []
+              }
+            },
+            {
+              "name": "Clubs SSP",
+              "technos": [],
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Clubs%22",
+              "host": {
+                "Prodigy": []
+              }
+            },
+            {
+              "name": "CrownBet Bench",
+              "technos": [],
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Bench%22",
+              "host": {
+                "Prodigy": []
+              }
+            },
+            {
+              "name": "Work At CrownBet",
+              "technos": [],
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22WorkAtCrownBet%22",
+              "host": {
+                "Prodigy": []
+              }
+            },
+            {
+              "name": "Knowledge Center",
+              "technos": [],
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22KnowledgeCenter%22",
+              "host": {
+                "Prodigy": []
+              }
+            }
+          ],
+          "dependsOn": [
+            "Content API"
+          ]
+        },
+        {
+          "name": "Phone",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Phone%22"
+        },
+        {
+          "name": "Social",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Social%22"
+        },
+        {
+          "name": "Live Chat",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22LiveChat%22"
+        }
+      ]
+    },
+    {
+      "name": "Products&Services",
+      "children": [
+        {
+          "name": "Wagering&Gambling",
+          "children": [
+            {
+              "name": "Racing",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Racing%22"
+            },
+            {
+              "name": "Sports",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Sports%22",
+              "technos": [
+                "Fixture Risk",
+                "Suspend and Un-Suspend events",
+                "Sports"
+              ],
+              "host": {
+                "Apollo": []
+              }
+            },
+            {
+              "name": "MultiExpress",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22MultiExpress%22"
+            },
+            {
+              "name": "Lotto",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Lotto%22",
+              "host": {
+                "Phoenix": []
+              }
+            },
+            {
+              "name": "Live Vision",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22LiveVision%22"
+            },
+            {
+              "name": "Responsible Gambling",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22ResponsibleGambling%22",
+              "satisfaction": 1
+            }
+          ]
+        },
+        {
+          "name": "Customer Services",
+          "children": [
+            {
+              "name": "Loyalty&Rewards",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Loyalty%22",
+              "host": {
+                "Ignite": []
+              }
+            },
+            {
+              "name": "Promotions",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Promotions%22",
+              "host": {
+                "Ignite": []
+              }
+            },
+            {
+              "name": "CrownBet Tipping",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Tipping%22"
+            },
+            {
+              "name": "Shared Wallet",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22SharedWallet%22",
+              "host": {
+                "Raptor": []
+              }
+            },
+            {
+              "name": "Preferences",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Preferences%22"
+            },
+            {
+              "name": "CB Card",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22LiveVision%22"
+            }
+          ]
+        },
+        {
+          "name": "Corporate",
+          "children": [
+            {
+              "name": "Clubs Management",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22ClubsManagement%22"
+            },
+            {
+              "name": "Affiliates",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Affiliates%22",
+              "host": {
+                "Spark": []
+              }
+            },
+            {
+              "name": "External Odds Feeds",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22ExternalOddsFeeds%22"
+            }
+          ],
+          "host": {}
+        }
+      ]
+    },
+    {
+      "name": "Core Platforms",
+      "children": [
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "Settlement",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Settlement%22",
+              "host": {},
+              "technos": [
+                "Single",
+                "RacingMultiple",
+                "RacingExotic",
+                "Parlay",
+                "Multi",
+                "BoxMulti",
+                "Fixed",
+                "Totes",
+                "Doubles",
+                "Trebles",
+                "Quaddie",
+                "Exacta",
+                "Trifecta",
+                "FirstFour",
+                "Quinella",
+                "Trixie",
+                "Heinz",
+                "Yankee",
+                "Goliath",
+                "BOELC",
+                "BetTypes",
+                "Parlay Bet",
+                "PayScratching",
+                "RacingExotic Bet",
+                "RacingMultiple Bet",
+                "Single Bet"
+              ],
+              "dependsOn": []
+            },
+            {
+              "name": "Risk Management",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22RiskManagement%22",
+              "host": {
+                "Absolute": []
+              }
+            },
+            {
+              "name": "Bets Management",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22BetsManagement%22",
+              "host": {
+                "Pegasus": [],
+                "Apollo": []
+              }
+            },
+            {
+              "name": "Racing Feeds",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22RacingFeeds%22",
+              "host": {
+                "Atlas": []
+              }
+            },
+            {
+              "name": "Events Management",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22EventsManagement%22"
+            },
+            {
+              "name": "PhoneBet",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22PhoneBet%22"
+            },
+            {
+              "name": "Sports Feeds",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22SportsFeeds%22",
+              "host": {
+                "Atlas": []
+              },
+              "technos": [
+                "Fixture Risk",
+                "Suspend and Un-Suspend events",
+                "Sports"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "Preference Center",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22PreferenceCenter%22"
+            },
+            {
+              "name": "Rewards",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Rewards%22",
+              "host": {
+                "Ignite": []
+              }
+            },
+            {
+              "name": "Telemarketing",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Telemarketing%22"
+            },
+            {
+              "name": "Promotions Engine",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22PromotionsEngine%22",
+              "host": {
+                "Ignite": []
+              }
+            }
+          ]
+        },
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "Client 360",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Client360%22",
+              "host": {
+                "Asterisk": [],
+                "Prodigy": []
+              }
+            },
+            {
+              "name": "Wattle",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Wattle360%22",
+              "host": {
+                "Prodigy": []
+              }
+            },
+            {
+              "name": "Shared Wallet & Account",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22SharedWallet&Account%22",
+              "host": {
+                "Raptor": []
+              }
+            },
+            {
+              "name": "Credit & Payment",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Credit&Payment%22",
+              "host": {
+                "Asterisk": []
+              }
+            },
+            {
+              "name": "CrownBet Customer Identity",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22CrownBetCustomerIdentity%22"
+            },
+            {
+              "name": "Prospectus & Inbound Contacts",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Prospectus&InboundContacts%22"
+            },
+            {
+              "name": "Fraud Detection & Prevention",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22FraudDetection&Prevention%22"
+            }
+          ]
+        },
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "Lotto Platform",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Lotto%22",
+              "host": {
+                "Phoenix": []
+              }
+            },
+            {
+              "name": "Tipping",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Tipping%22"
+            }
+          ]
+        },
+        {
+          "name": "",
+          "children": [
+            {
+              "name": "Affiliates Mgmt",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Affiliates%22",
+              "host": {
+                "Spark": []
+              }
+            },
+            {
+              "name": "External Odds Feeds",
+              "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22ExternalOddsFeeds%22",
+              "host": {
+                "Atlas": []
+              }
+            }
+          ]
+        },
+        {
+          "name": "Customer Insights - Predictive Modelling",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22CustomerInsights%22"
+        }
+      ]
+    },
+    {
+      "name": "Shared Services",
+      "children": [
+        {
+          "name": "Communications",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Communications%22"
+        },
+        {
+          "name": "Notifications",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Notifications%22"
+        },
+        {
+          "name": "Events Fanout",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22EventsFanout%22"
+        },
+        {
+          "name": "Bets Fanout",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22BetsFanout%22",
+          "host": {
+            "Pegasus": [],
+            "Apollo": []
+          }
+        },
+        {
+          "name": "UAC Mgmt",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22UACMgmt%22"
+        },
+        {
+          "name": "CX Verification",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22CustomerVerification%22",
+          "host": {
+            "Asterisk": []
+          }
+        },
+        {
+          "name": "Audit Log",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22AuditLog%22"
+        },
+        {
+          "name": "Payment",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Payment%22",
+          "children": [],
+          "host": {
+            "Asterisk": []
+          }
+        },
+        {
+          "name": "Telephony&Dialer",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Telephony&Dialer%22"
+        },
+        {
+          "name": "Contact Link",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22ContactLink%22"
+        },
+        {
+          "name": "Location",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Location%22"
+        }
+      ]
+    },
+    {
+      "name": "External Platforms",
+      "children": [
+        {
+          "name": "CrownConnect",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22ExternalPlatforms%22"
+        },
+        {
+          "name": "MyAffiliates",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22MyAffiliates%22",
+          "host": {
+            "Spark": []
+          }
+        },
+        {
+          "name": "Poli",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Poli%22",
+          "host": {
+            "Asterisk": []
+          }
+        },
+        {
+          "name": "Racing Feeds - Gerard Lazare",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22RacingFeeds%22",
+          "host": {
+            "Atlas": []
+          }
+        },
+        {
+          "name": "Zendesk",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22zendesk%22"
+        },
+        {
+          "name": "Comms - SalesForce/SalesForce",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22SalesForce%22"
+        },
+        {
+          "name": "CX Verification Veda/Green ID",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22CustomerVerification%22",
+          "host": {
+            "Asterisk": []
+          }
+        },
+        {
+          "name": "Fraud Detection - Experian",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22FraudDetection%22"
+        },
+        {
+          "name": "Sports Feeds Sporting Solutions SIS BetRadar)",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22SportsFeeds%22",
+          "technos": [
+            "Fixture Risk",
+            "Suspend and Un-Suspend events",
+            "Sports"
+          ],
+          "host": {
+            "Atlas": []
+          }
+        },
+        {
+          "name": "Loss Adjuster -lotto reconciliation",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22LossAdjuster%22",
+          "host": {
+            "Phoenix": []
+          }
+        },
+        {
+          "name": "Cisco Phone",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Cisco%22"
+        },
+        {
+          "name": "Velocity Rewards",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22VelocityRewards%22",
+          "host": {
+            "Ignite": []
+          }
+        },
+        {
+          "name": "Braintree",
+          "url": "https://jira.beteasy.be/issues/?jql=project%20%3D%20MTR%20AND%20issuetype%20%3D%20Test%20AND%20text%20~%20%22Braintree%22"
+        }
+      ]
+    }
+  ]
+}
